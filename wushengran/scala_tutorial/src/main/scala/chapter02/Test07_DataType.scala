@@ -1,6 +1,6 @@
 package chapter02
 
-object Test06_DataType {
+object Test07_DataType {
   def main(args: Array[String]): Unit = {
 
     // 编译器会报错但是可以运行成功，因为 IDE 对 scala 兼容性不是很好
