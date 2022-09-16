@@ -6,5 +6,6 @@ object Test08_DataTypeConversion {
     var b: Byte = n.toByte
     println(b)
     println(128.toByte)
+
   }
 }

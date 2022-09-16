@@ -15,5 +15,15 @@ object Test01_Operator {
     var b: Byte = 10
     //b += 1 // 不会默认做强转
     println(b)
+
+    val a: Byte = 60
+    println(a << 3) // 按照int 类型移动，不会溢出
+
+    val i: Int = 1.+(1)
+    val j: Int = 1+(1)
+    val k: Int = 1+1
+
+    println(7.5    toString)
+
   }
 }
