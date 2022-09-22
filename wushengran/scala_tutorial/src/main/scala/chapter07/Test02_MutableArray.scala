@@ -2,7 +2,7 @@ package chapter07
 
 import scala.collection.mutable.ArrayBuffer
 
-object Test01_MutableArray {
+object Test02_MutableArray {
   def main(args: Array[String]): Unit = {
     val arr01 = new ArrayBuffer[Any]()
     val arr02 = ArrayBuffer(1, 2, 3)
@@ -28,6 +28,26 @@ object Test01_MutableArray {
     println(arr02)
     println(arr02.hashCode())
 
+    arr02.remove(0) // 删除索引
+    arr02.remove(0,2)
+    println(arr02)
+    // 删除数值
+    arr02 -= 33
+    println(arr02)
+
+    // 多维数组
+    val arr = Array.ofDim[Int](3, 4)
+    arr(1)(2) = 88
+    for(i <- arr){
+      for(j <- i){
+        print(j +" ")
+      }
+      println()
+    }
+
+    for(i <- arr; j <- i) print(j)
+    println()
+    arr.foreach(_.foreach(print))
 
   }
 }
